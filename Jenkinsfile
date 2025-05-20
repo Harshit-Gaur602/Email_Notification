@@ -34,7 +34,7 @@ pipeline {
             emailext (
                 subject: "Jenkins Build #${env.BUILD_NUMBER} Result: ${currentBuild.currentResult}",
                 body: "The pipeline has completed.\n\nBuild URL: ${env.BUILD_URL}",
-                to: 'hgair602@gmail.com',
+                to: 'hgaur602@gmail.com',
                 attachmentsPattern: '*.log',
                 mimeType: 'text/plain'
             )
